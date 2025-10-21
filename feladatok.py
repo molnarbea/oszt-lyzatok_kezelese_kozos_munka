@@ -45,7 +45,16 @@ def negyedik_feladat(lista=[]):
         cv+=1
     return diak
 
-
+def otodik_feladat(lista=[],jegy=0):
+    szam=0
+    cv=0
+    i=0
+    while len(lista) > cv:
+        if lista[i] == jegy:
+            szam+=1
+        i+=1
+        cv+=1
+    return szam
 
 def hetedik_feladat():
     jegy_lista = []
@@ -59,14 +68,4 @@ def hetedik_feladat():
         jegy_lista.append(jegy)
         cv+=1
     return jegy_lista
-def otodik_feladat(lista=[],jegy=0):
-    szam=0
-    cv=0
-    i=0
-    while len(lista) > cv:
-        if lista[i] == jegy:
-            szam+=1
-        i+=1
-        cv+=1
-    return szam
     
