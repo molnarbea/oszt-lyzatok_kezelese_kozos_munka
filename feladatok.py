@@ -1,9 +1,4 @@
-""" 
-1. Mennyi a programozás jegyek átlaga? 
-
-2. Összesen hány ötös van?  
-"""
-
+import random
 
 def elso_feladat(lista = []):
     i = 0
@@ -14,6 +9,7 @@ def elso_feladat(lista = []):
         cv+=1
         i+=1
     atlag=osszesen//len(lista)
+    print(atlag)
     return atlag
 
 def masodik_feladat(lista = []):
@@ -36,4 +32,30 @@ def harmadik_feladat(lista=[]):
             elegtelen+=1
         i+=1
         cv+=1
-    print(f"Összesen {elegtelen} diák kaputt elégtelent.")
+    return elegtelen
+
+def negyedik_feladat(lista=[]):
+    cv=0
+    i=0
+    diak=0
+    while len(lista) > cv:
+        if lista[i] == 1:
+            diak=i+1
+        i+=1
+        cv+=1
+    return diak
+
+
+
+def hetedik_feladat():
+    jegy_lista = []
+    cv= 0 
+    while cv < 17:
+        veljegy = random.randint(1,6)
+        if veljegy == 6:
+            jegy = 5
+        else:
+            jegy = veljegy
+        jegy_lista.append(jegy)
+        cv+=1
+    return jegy_lista
