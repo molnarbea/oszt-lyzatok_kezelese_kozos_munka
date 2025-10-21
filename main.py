@@ -8,4 +8,4 @@ print("Programozás jegyek átlaga", atlag)
 otosok = feladatok.masodik_feladat(lista)
 print(f"Összesen {otosok} van")
 
-#feladatok.harmadik_feladat(lista)
+feladatok.harmadik_feladat(lista)
