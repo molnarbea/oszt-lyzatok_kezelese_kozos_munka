@@ -14,7 +14,7 @@ def elso_feladat(lista = []):
         cv+=1
         i+=1
     atlag=osszesen//len(lista)
-    print(atlag)
+    return atlag
 
 def masodik_feladat(lista = []):
     cv = 0
@@ -25,7 +25,7 @@ def masodik_feladat(lista = []):
             otos+=1
         i+=1   
         cv+=1
-    print(otos)
+    return otos
 
 def harmadik_feladat(lista=[]):
     cv=0
